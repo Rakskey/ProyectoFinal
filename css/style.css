@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(../font/montserrat_5.0.8/ttf/montserrat-latin-200-normal.ttf);
+}
+:root{
+    --primario: #3a3a3a;
+    --secundario:#f4f4f4;
+}
+body {
+    font-family: "montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secundario);
+}
+header img{
+    width: 100%;
+}
+header {
+    background-image: url(../img/hoja-pluma.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: var(--secundario);
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    /* justify-items: first baseline; */
+    justify-content:space-between;
+    height: 15vh;
+}
+figure img{
+    width: 8vh;
+}
+header button{
+    border: none;
+    padding: 0.8vh 1vh;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+header button:hover{
+    background-color: var(--primario);
+    color: var(--secundario);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+nav {
+    background-color: var(--primario);
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: var(--secundario);
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--primario);
+    color: var(--secundario);
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
